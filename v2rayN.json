@@ -50,6 +50,17 @@
     "remarks": "\u8FDB\u7A0B"
   },
   {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "\u56FD\u5185\u76F4\u8FDE"
+  },
+  {
     "outboundTag": "proxy",
     "domain": [
       "geosite:youtube"
@@ -60,7 +71,31 @@
   {
     "outboundTag": "11",
     "domain": [
-      "geosite:category-ai-!cn"
+      "geosite:category-ai-!cn",
+      "domain:openai.com",
+      "geosite:facebook",
+      "domain:facebook.com",
+      "domain:fbcdn.net",
+      "geosite:tiktok",
+      "domain:tiktok.com",
+      "domain:tiktokcdn.com",
+      "geosite:instagram",
+      "domain:instagram.com",
+      "domain:cdninstagram.com",
+      "geosite:twitter",
+      "domain:x.com",
+      "domain:twitter.com",
+      "domain:twimg.com",
+      "geosite:threads",
+      "domain:threads.net",
+      "geosite:pinterest",
+      "domain:pinterest.com",
+      "geosite:reddit",
+      "domain:reddit.com",
+      "domain:redditmedia.com",
+      "geosite:discord",
+      "domain:discord.com",
+      "domain:discordapp.com"
     ],
     "enabled": true,
     "remarks": "AI\u4E13\u7528\u89C4\u5219"
@@ -70,6 +105,7 @@
     "outboundTag": "jp",
     "domain": [
       "geosite:cloudflare",
+      "domain:cloudflaremirrors.com",
       "geosite:google",
       "geosite:github",
       "domain:gist.github.com",
@@ -81,17 +117,6 @@
     ],
     "enabled": true,
     "remarks": "CF"
-  },
-  {
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:cn"
-    ],
-    "domain": [
-      "geosite:cn"
-    ],
-    "enabled": true,
-    "remarks": "\u56FD\u5185\u76F4\u8FDE"
   },
   {
     "port": "0-65535",
