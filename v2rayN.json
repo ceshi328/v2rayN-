@@ -26,52 +26,30 @@
     "remarks": "\u5E7F\u544A\u62E6\u622A"
   },
   {
-    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:github"
+    ],
+    "enabled": true,
+    "remarks": "github"
+  },
+  {
     "outboundTag": "direct",
     "domain": [
       "geosite:microsoft",
-      "domain:081516.xyz",
-      "domain:mm.jiaiblog.dpdns.org",
       "domain:shasha.website",
       "domain:playback-speed.com",
       "domain:xiaozhukankan.com",
       "domain:pinoymovieshub.win",
       "domain:clashverge.dev"
     ],
-    "process": [
-      "RayLink.exe",
-      "Weixin.exe",
-      "QQ.exe",
-      "Snipaste.exe",
-      "Netcatty.exe",
-      "main.exe"
-    ],
     "enabled": true,
-    "remarks": "\u8FDB\u7A0B"
-  },
-  {
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:cn"
-    ],
-    "domain": [
-      "geosite:cn"
-    ],
-    "enabled": true,
-    "remarks": "\u56FD\u5185\u76F4\u8FDE"
-  },
-  {
-    "outboundTag": "proxy",
-    "domain": [
-      "geosite:youtube"
-    ],
-    "enabled": true,
-    "remarks": "\u6CB9\u7BA1\u4E13\u7528\u89C4\u5219"
+    "remarks": "\u76F4\u8FDE\u57DF\u540D"
   },
   {
     "outboundTag": "11",
     "domain": [
-      "geosite:category-ai-!cn",
+      "geosite:openai",
       "domain:openai.com",
       "geosite:facebook",
       "domain:facebook.com",
@@ -98,25 +76,34 @@
       "domain:discordapp.com"
     ],
     "enabled": true,
+    "remarks": "\u793E\u4EA4"
+  },
+  {
+    "outboundTag": "11",
+    "domain": [
+      "geosite:category-ai-!cn"
+    ],
+    "enabled": true,
     "remarks": "AI\u4E13\u7528\u89C4\u5219"
   },
   {
-    "port": "",
-    "outboundTag": "jp",
+    "outboundTag": "US1",
     "domain": [
-      "geosite:cloudflare",
-      "domain:cloudflaremirrors.com",
-      "geosite:google",
-      "geosite:github",
-      "domain:gist.github.com",
-      "domain:serv00.com",
-      "domain:streamm4u.page"
-    ],
-    "process": [
-      "AdsPowerGlobal.exe"
+      "geosite:youtube"
     ],
     "enabled": true,
-    "remarks": "CF"
+    "remarks": "\u6CB9\u7BA1\u4E13\u7528\u89C4\u5219"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "\u56FD\u5185\u76F4\u8FDE"
   },
   {
     "port": "0-65535",
